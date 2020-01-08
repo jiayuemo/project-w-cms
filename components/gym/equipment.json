@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "components_gym_equipment",
+  "info": {
+    "name": "equipment",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "free_weight",
+        "cable",
+        "barbell",
+        "machine",
+        "body_weight",
+        "other"
+      ],
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "connection": "default",
+  "collectionName": "exercises",
+  "info": {
+    "name": "exercise"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "video": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "instruction": {
+      "type": "richtext",
+      "required": true
+    },
+    "anatomy": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "muscle_group": {
+      "type": "component",
+      "repeatable": false,
+      "component": "gym.muscle-group",
+      "required": true
+    },
+    "equipment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "gym.equipment",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "components_muscle_group_muscle_groups",
+  "info": {
+    "name": "muscle_group",
+    "icon": "walking"
+  },
+  "options": {},
+  "attributes": {
+    "group": {
+      "type": "enumeration",
+      "enum": [
+        "chest",
+        "shoulder",
+        "arm",
+        "leg",
+        "ab",
+        "back"
+      ],
+      "required": true
+    },
+    "muscle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
