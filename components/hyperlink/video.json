@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "video",
+    "icon": "box"
+  },
+  "options": {},
+  "attributes": {
+    "video_hyperlink": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_hyperlink_videos"
+}

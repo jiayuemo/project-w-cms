@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "image",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "image_hyperlink": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_hyperlink_images"
+}

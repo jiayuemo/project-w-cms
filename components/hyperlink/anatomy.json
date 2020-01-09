@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "anatomy",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "anatomy_hyperlink": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_hyperlink_anatomies"
+}

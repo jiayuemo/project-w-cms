@@ -14,35 +14,13 @@
       "required": true,
       "unique": true
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
-    "image": {
-      "collection": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": true
-    },
-    "video": {
-      "collection": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": true
-    },
     "instruction": {
       "type": "richtext",
       "required": true
     },
-    "anatomy": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": true
-    },
     "muscle_group": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "gym.muscle-group",
       "required": true
     },
@@ -50,6 +28,28 @@
       "type": "component",
       "repeatable": false,
       "component": "gym.equipment",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "anatomy": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hyperlink.anatomy",
+      "required": true
+    },
+    "video": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hyperlink.video",
+      "required": true
+    },
+    "image": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hyperlink.image",
       "required": true
     }
   }
